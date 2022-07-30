@@ -14,7 +14,7 @@
             <column name="ID" type="int">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="PK_VENDEDOR"/>
             </column>
-            <column name="NOME" type="${descricao}">
+            <column name="NOME" type="${descicao}">
                 <constraints nullable="false"></constraints>
             </column>
         </createTable>
