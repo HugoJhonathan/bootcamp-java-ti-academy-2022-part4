@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ArtistaRepository extends RepositoryCatalogo<Artista, Long> {
 
-    //                       Esse Artista é a Classe! não o nome da Tabela
     @Query(value = "SELECT a FROM Artista a WHERE a.nome = :nome")
     Artista consultarPeloNome(@Param(value="nome") String nome);
 
