@@ -1,6 +1,10 @@
 package br.com.tiacademy.catalogo.entity;
 
-public class EntidadeCatalogo {
+import java.io.Serializable;
+
+public class EntidadeCatalogo implements Serializable {
+
+    private static final long serialVersionUID = -1621840087149135537L;
 
     private Long id;
     private String nome;

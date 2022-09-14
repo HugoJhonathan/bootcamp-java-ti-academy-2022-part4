@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ArtistaRepository extends RepositoryCatalogo<Artista, Long> {
 
-    @Query(value = "SELECT a FROM Artista a WHERE a.nome = :nome")
+    @Query(value = "SELECT a FROM Artista a WHERE a.nome LIKE   '%' || :nome || '%'")
     Artista consultarPeloNome(@Param(value="nome") String nome);
 
-    Artista findByNome(String nome);
+//    Artista findByNome(String nome);
 }

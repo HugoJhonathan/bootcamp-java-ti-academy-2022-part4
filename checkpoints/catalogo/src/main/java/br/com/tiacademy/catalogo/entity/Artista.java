@@ -1,5 +1,6 @@
 package br.com.tiacademy.catalogo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,6 +20,7 @@ public class Artista extends EntidadeCatalogo {
 
     private String nome;
 
+    @JsonIgnore
     @ManyToOne()
     @JoinColumn(name="gravadora_id", referencedColumnName = "id", nullable = false)
     private Gravadora gravadora;
