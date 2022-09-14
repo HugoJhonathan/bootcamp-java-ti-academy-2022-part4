@@ -9,7 +9,9 @@ public class VendedorService extends CrudService<Vendedor, Long> {
 
     @Override
     protected Vendedor editarEntidade(Vendedor recuperado, Vendedor entidade) {
+
         recuperado.setNome(entidade.getNome());
         return recuperado;
+
     }
 }

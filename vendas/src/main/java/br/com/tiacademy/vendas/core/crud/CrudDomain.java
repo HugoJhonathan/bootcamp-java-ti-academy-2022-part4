@@ -4,3 +4,4 @@ public interface CrudDomain<ID> {
     ID getId();
 
 }
+
